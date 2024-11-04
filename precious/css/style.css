@@ -1,0 +1,391 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body {
+    background-color: black;
+}
+.about {
+    top: 0;
+    left: 0;
+    border: 1px hidden blue;
+    background-image: linear-gradient(to bottom right, purple, violet);
+    height: 200px;
+    width: 200px;
+    border-radius: 0px 0px 200px 0px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: cursive;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.about .tag {
+    opacity: 0;
+}
+.burger-a {
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    top: 50px;
+}
+.line-a {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+.about:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px hidden blue;
+    background-image: linear-gradient(to bottom right, purple, violet);
+    height: 90%;
+    width: 95%;
+    border-radius: 0px 0px 200px 0px;
+    z-index: 4;
+    transition: all 1.5s ease-out;
+}
+.about:hover .text {
+    opacity: 1;
+    transition: all 4s ease-out;
+}
+.about:hover .pic {
+    opacity: 1;
+    transition: all 3s ease-out;
+}
+.about:hover .content {
+    opacity: 1;
+    transition: all 3s ease-out;
+    margin-top: 100px;
+    left: 0;
+    position: absolute;
+}
+.content {
+    left: -250%;
+    position: absolute;
+}
+.text {
+    opacity: 0;
+    border: 2px solid magenta;
+    border-radius: 5px;
+    float: left;
+    max-width: 40%;
+    margin-left: 150px;
+    padding: 20px;
+}
+.pic {
+    opacity: 0;
+    border-radius: 5px;
+    margin-left: 20px;
+    max-width: 50%;
+}
+.pic img {
+    border: 2px solid magenta;
+    border-radius: 5px;
+    max-width: 40%;
+}
+
+.skills {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px hidden blue;
+    background-image: linear-gradient(to bottom left, orchid, plum);
+    height: 200px;
+    width: 200px;
+    border-radius: 0px 0px 0px 200px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    font-family: cursive;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.skills:hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px hidden blue;
+    background-image: linear-gradient(to bottom left, orchid, plum);
+    height: 90%;
+    width: 95%;
+    border-radius: 0px 0px 0px 200px;
+    z-index: 3;
+    transition: all 1.5s ease-out;
+}
+.skills:hover .lang {
+    opacity: 1;
+    transition: all 4s ease-out;
+    height: 100%;
+}
+.skills:hover .lang li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.skills:hover .burger-s {
+    top: 30px;
+    transition: all 1.5s ease-out;
+}
+.burger-s {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 50px;
+}
+.line-s {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+.lang {
+    position: absolute;
+    right: -100%;
+    left: 0;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    flex-direction: column;
+    pointer-events: none;
+    opacity: 0;
+}
+.lang li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+    padding-left: 100px;
+}
+.lang li img {
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+}
+.skills .tag {
+    opacity: 0;
+}
+
+.projects {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px hidden blue;
+    /* background-image: linear-gradient(to top right, indigo, thistle); */
+    height: 200px;
+    width: 200px;
+    border-radius: 0px 200px 0px 0px;
+    padding-top: 100px;
+    padding-left: 20px;
+    font-family: cursive;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.projects img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px hidden blue;
+    height: 150px;
+    width: 150px;
+}
+.line-p {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px hidden blue;
+    background-image: linear-gradient(to top left, magenta, lavender);
+    height: 200px;
+    width: 200px;
+    border-radius: 200px 0px 0px 0px;
+    padding-top: 100px;
+    padding-left: 70px;
+    font-family: cursive;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.burger-c {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 80px;
+}
+.line-c {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+.contact:hover {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px hidden blue;
+    background-image: linear-gradient(to top left, magenta, lavender);
+    height: 90%;
+    width: 95%;
+    border-radius: 200px 0px 0px 0px;
+    padding: 20px;
+    font-family: cursive;
+    color: white;
+    z-index: 4;
+    transition: all 1.5s ease-out;
+}
+.contact:hover .burger-c {
+    top: 30px;
+    transition: all 1.5s ease-out;
+}
+.contact ul {
+    opacity: 0;
+    color: black;
+}
+.contact:hover ul {
+    opacity: 1;
+    transition: all 4s ease-out;
+}
+.contact .tag {
+    opacity: 0;
+}
+.burger-c {
+    right: 10px;
+    top: 100px;
+}
+
+.welcome {
+    position: sticky;
+    border: 2px solid fuchsia;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 
+        0 0 60px 30px black,
+        0 0 100px 60px orchid,
+        0 0 140px 90px fuchsia;
+    width: 300px;
+    height: 150px;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+
+@media(max-width:870px) {
+    .about {
+        height: 100px;
+        width: 100px;
+        overflow-x: hidden;
+    }
+    .about:hover .content {
+        opacity: 1;
+        transition: all 3s ease-out;
+        margin-top: 50px;
+        left: 0;
+        position: absolute;
+    }
+    .about h2 {
+        opacity: 0;
+    }
+    .about .tag {
+        opacity: 1;
+        font-size: 24px;
+        top: 20px;
+        left: 15px;
+        position: absolute;
+        text-overflow: hidden;
+    }
+    .text {
+        opacity: 0;
+        border: 2px solid magenta;
+        border-radius: 5px;
+        float: left;
+        max-width: 40%;
+        margin-left: 120px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }  
+    .pic {
+        opacity: 0;
+        border-radius: 5px;
+        margin-left: 20px;
+        max-width: 200px;
+    }
+    .pic img {
+        border: 2px solid magenta;
+        border-radius: 5px;
+        max-width: 200px;
+    }
+
+    .skills {
+        height: 100px;
+        width: 100px;
+        padding-top: 0px;
+    }
+    .skills h2 {
+        opacity: 0;
+    }
+    .skills .tag {
+        opacity: 1;
+        font-size: 24px;
+        top: 20px;
+        right: 15px;
+        position: absolute;
+    }
+    .skills:hover .tag {
+        position: relative;
+        top: 0;
+        right: 0;
+        transition: all 1.5s ease-out;
+    }
+    .projects {
+        height: 100px;
+        width: 100px;
+    }
+    .projects img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: 1px hidden blue;
+        height: 80px;
+        width: 80px;
+    }
+    .contact {
+        height: 100px;
+        width: 100px;
+        padding-top: 70px;
+        padding-left: 5px;
+    }
+    .contact h2 {
+        opacity: 0;
+    }
+    .contact .tag {
+        opacity: 1;
+        font-size: 20px;
+    }
+    .burger-c {
+        right: 10px;
+        top: 40px;
+    }
+
+    .welcome {
+        width: 70%;
+        margin-top: 200px;
+    }
+}
